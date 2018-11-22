@@ -333,5 +333,10 @@ input[type=submit] {
        float:none;
     
     }
+
+    .authport{
+        width:100%;
+        height:auto;
+    }
 }
 
