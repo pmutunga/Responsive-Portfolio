@@ -3,45 +3,70 @@
     <head>
             <meta charset="UTF-8"> <!--what does this do?-->
             <title>Paskwa Mutunga Portfolio</title> <!--This appears at the top of the browser and is used by Google-->
-            <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> this is the link to the css reset file -->
+            <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> <!--this is the link to the css reset file-->
             <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!--this is the link to the css file-->
 
     </head>
 
     <body>
        <!-- Top Nav -->
-          <div id="navcontainer">
-            <p id="logo"> Paskwa Mutunga </p>
+       <header id="masthead">
+            <a href="index.html" id="logo">Paskwa</a>
             <nav>
-                <ul>
-                    <li><a href="index.html">About</a> </li>
-                    <li class="active"><a href="portfolio.html">Portfolio</a> </li>
-                    <li><a href="contact.html">Contact</a> </li>
-
-                </ul>
+                <a href="index.html">About</a>
+                <a class="active" href="portfolio.html">Portfolio</a>
+                <a href="contact.html"> Contact</a>
             </nav>
-            </div>
-
+        </header>
         
         <!-- Main Content Area -->
        
           
-        <div id="maincontent">
+        <div id ="main-container"class="container">
+        <section class="main-section">
             <h1>Portfolio</h1>
 
-            
-                <div id="port1" class="port"><p><strong> Scrum</strong></p></div>
-                <div id="port2" class="port"><p><strong>Business Analysis</strong></p> </div>
-                <div id="port3" class="port"><p><strong>Project Management</strong> </p></div>
-                <div id="port4" class="port"><p><strong>Digital Strategy</strong></p> </div>
-                <div id="port5" class="port"> <p><strong>Web Development</strong> </p></div>
+            <div class="work">
+                <img class = "port" src="assets/images/Business Analysis.jpg" alt="Business Analysis">
+                <h3 class="worksummary">Business Analysis</h3>
+            </div>
+
+            <div class="work">
+                <img class = "port" src="assets/images/Digital Strategy.jpg" alt="Digital Strategy">
+                <h3 class="worksummary">Digital Strategy</h3>
+            </div>
+
+            <div class="work">
+                <img class = "port" src="assets/images/Web Development.jpg" alt="Web Development">
+                <h3 class="worksummary">Web Development</h3>
+            </div>
+
+            <div class="work">
+                <img class = "port" src="assets/images/Project Management.jpg" alt="Project Management">
+                <h3 class="worksummary">Project Management</h3>
+            </div>
+
+            <div class="work">
+                    <img class = "port" src="assets/images/Scrum.jpg" alt="scrum">
+                    <h3 class="worksummary">Scrum</h3>
+
+            </div>
+            </section>
                
-            
+            <section class="sidebar">
+                <div id="connect">
+                <h2> Connect with me</h2>
+                       <img class="social" src="assets/images/linkedinred.png" alt="LinkedIn Icon">
+                       <img class="social" src="assets/images/twitterblue.png" alt="Twitter icon">
+                       <img class = "social" src="assets/images/githubpurple.png" alt="GitHub icon" srcset="">
+                </div>   
+            </section>
+
         </div>
         
     
             <footer>
-                copyright
+                &copy;copyright Paskwa Mutunga
             </footer>
 
         

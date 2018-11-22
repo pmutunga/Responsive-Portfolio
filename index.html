@@ -3,31 +3,32 @@
     <head>
             <meta charset="UTF-8"> <!--what does this do?-->
             <title>Paskwa Mutunga Portfolio</title> <!--This appears at the top of the browser and is used by Google-->
-            <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> this is the link to the css reset file -->
+            <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> <!--this is the link to the css reset file-->
             <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!--this is the link to the css file-->
 
     </head>
 
     <body>
        <!-- Top Navigation -->
-            <div id="navcontainer">
-                <p id="logo"> Paskwa Mutunga </p>
-                <nav>
-                    <ul>
-                        <li class="active"><a href="#home">About</a> </li>
-                        <li><a href="portfolio.html">Portfolio</a> </li>
-                        <li><a href="contact.html">Contact</a> </li>
-                    </ul>
-                </nav>
-            </div>
+        <header id="masthead">
+            <a href="index.html" id="logo">Paskwa</a>
+            <nav>
+                <a class="active" href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html"> Contact</a>
+            </nav>
+        </header>
 
         <!-- Main Content Area -->
-        <div id="maincontent">
+                
+        <div id ="main-container"class="container">
+
+        <section class="main-section">
             <h1> About Me</h1>
             
             <div id="summary" class="clearfix">
                      
-                <img id="portrait" src="assets\images\2-PaskwaM3.jpg" width='400' height='400' alt="Paskwa portrait">
+                <img class="authport" src="assets\images\2-PaskwaM3.jpg" width='400' height='400' alt="Paskwa portrait">
 
                 <p> I’m an Agile, Entrepreneurial, Christian, Electrical and Communications Engineer with over 15 years Innovation & IT strategy execution in global organizations in the for-profit and not-for-profit sectors. </p>
 
@@ -50,11 +51,23 @@
                         <li> HTML5 & CSS4</li>
                     </ul>               
             </div>
+        </section>    
+
+            <section class="sidebar">
+                <div id="connect">
+                        <h2> Connect with me</h2>
+                        <img class="social" src="assets/images/linkedinred.png" alt="LinkedIn Icon">
+                        <img class="social" src="assets/images/twitterblue.png" alt="Twitter icon">
+                        <img class = "social" src="assets/images/githubpurple.png" alt="GitHub icon" srcset="">
+                </div>
+
+
+            </section>
         </div>
                
         <!--  Footer -->
             <footer>
-                copyright
+                &copy;copyright Paskwa Mutunga
             </footer>
 
     </body>

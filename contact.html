@@ -3,38 +3,61 @@
     <head>
             <meta charset="UTF-8"> <!--what does this do?-->
             <title>Paskwa Mutunga Portfolio</title> <!--This appears at the top of the browser and is used by Google-->
-            <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> this is the link to the css reset file -->
+            <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> <!--this is the link to the css reset file-->
             <link rel="stylesheet" type="text/css" href="assets/css/style.css"> <!--this is the link to the css file-->
 
     </head>
 
     <body>
         <!-- Top Navigation -->
-            <div id="navcontainer">
-                <p id="logo"> Paskwa Mutunga </p>
+        <header id="masthead">
+                <a href="index.html" id="logo">Paskwa</a>
                 <nav>
-                    <ul>
-                        <li><a href="index.html">About</a> </li>
-                        <li><a href="portfolio.html">Portfolio</a> </li>
-                        <li class="active"><a href="contact.html">Contact</a> </li>
-
-                    </ul>
+                    <a href="index.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a class="active" href="contact.html"> Contact</a>
                 </nav>
-            </div>
+            </header>
             
         <!-- Main Content Area -->
-           <div id="maincontent">
+           <div id="main-container"class="container">
+                <section class="main-section">
                 <h1>Contact Us</h1>
-                <form action="https://www.linkedin.com/in/paskwa/" method="GET">
-                   <p>Name <input type="text" name = "name" placeholder="John Smith"></p> 
-                   <p>Email <input type="email" name = "email" placeholder="example@gmail.com"></p>
-                   <p>Message <textarea name="comments" cols="30" rows = "4"> Enter your comments...</textarea></p>
-                   <button>Submit</button>
-                </form>
+                    <form id = "contact-form">
+                    <ul>
+                        <li>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="John Smith" required="required">
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" type="email" placeholder="example@gmail.com" required="required">
+                        </li>
+                        <li>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" required="required"></textarea>
+                        </li>
+                        <li>
+                            <input type="submit" name="submit">
+                        </li>
+                    </ul>
+                    </form>
+
+
+                </section>
+
+                <section class="sidebar">
+                        <div id="connect">
+                                <h2> Connect with me</h2>
+                                <img class="social" src="assets/images/linkedinred.png" alt="LinkedIn Icon">
+                                <img class="social" src="assets/images/twitterblue.png" alt="Twitter icon">
+                                <img class = "social" src="assets/images/githubpurple.png" alt="GitHub icon" srcset="">
+                        </div>
+            </section>
            </div>
     <!-- -->
             <footer>
-                copyright
+                &copy;copyright Paskwa Mutunga
             </footer>
 
         
