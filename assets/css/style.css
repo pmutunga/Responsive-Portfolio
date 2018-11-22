@@ -92,10 +92,7 @@ h2, h3 {
     font-size: 22px;
 }
 
-p:last-child {
-    margin-bottom: 0;
-    color: red;
-}
+
 
 /* content container */
 
@@ -138,15 +135,22 @@ p:last-child {
     margin-bottom: 20px;
 }
 
+#connect a {
+    margin-right: 5px;
+}
+
+#connect a:last-child{
+    margin-right: 0;
+}
 .social {
     width: 62px;
     height: 62px;
     margin-top: 8px;
-    margin-right: 5px;
-    }
-
-.social:last-child {
     margin-right: 0;
+    background: url(../images/light-grey-terrazzo.png);
+      }
+
+
 
 }
 
@@ -181,6 +185,28 @@ footer {
     float: left;
     margin-right: 25px;
     border-radius: 1.2rem;
+}
+
+#skills {
+    border-top: 1px solid #cccccc;
+}
+
+strong {
+    
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+#skills ul {
+    padding-left: 40px;
+    font-size: 17px;
+
+}
+
+#skills li {
+    list-style-type: disc;
+    margin-inline-start: 0px;
+    padding-inline-start: 40px;
 }
 
 /* Portfolio Page styling */
@@ -290,3 +316,22 @@ input[type=submit] {
     cursor: pointer;
 
 }
+
+/* Responsive design */
+
+@media screen and (max-width: 768px) {
+
+    #logo {
+        width:100%;
+    }
+
+    nav {
+        width:100%;
+
+    }
+    .sidebar{
+       float:none;
+    
+    }
+}
+
