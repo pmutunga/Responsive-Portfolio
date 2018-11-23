@@ -64,7 +64,12 @@ nav a:first-child {
 }
 
 .active {
-    background: #4aaaa5;
+    background:#4aaaa5;;
+    color: #efefef;
+}
+
+nav a:hover{
+    background: rgba(92, 145, 145, 0.8);
     color: #efefef;
 }
 
