@@ -324,6 +324,27 @@ input[type=submit] {
 
 /* Responsive design */
 
+/* I picked this breaking point because on inspection I noticed the page behaved in a wierd manner at this screensize. */
+
+@media only screen and (max-width: 915px) {
+
+    #logo {
+        width:100%;
+    }
+
+    nav {
+        width:100%;
+
+    }
+    .sidebar{
+       float:none;
+    
+    }
+
+
+}
+
+/* iPad */
 @media screen and (max-width: 768px) {
 
     #logo {
@@ -344,4 +365,3 @@ input[type=submit] {
         height:auto;
     }
 }
-
